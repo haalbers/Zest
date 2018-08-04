@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.topnav{
+    display:table;
+    background-color: transparent;
+    width: 100vw;
+    border: none;
+}
+.topnav a{
+    display:table-cell;
+    background-color: transparent;
+    height: 10px;
+    text-align: center;
+    color: gray;
+}
+
+.hero {
+    width: 100vw;
+    height:100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url(https://github.com/haalbers/zest/blob/Homepage/src/main/resources/static/images/whiskeyhouse.jpg?raw=true);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+.hero h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.hero .button {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+
+    /* Border styles */
+    border: 3px solid white;
+    border-radius: 20px;
+}
