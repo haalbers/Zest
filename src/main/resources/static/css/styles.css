@@ -3,13 +3,18 @@ body {
     margin: 0;
 }
 
-topnav a {
-    float: center;
-    color: #f2f2f2;
+.topnav{
+    display:table;
+    background-color: transparent;
+    width: 100vw;
+    border: none;
+}
+.topnav a{
+    display:table-cell;
+    background-color: transparent;
+    height: 10px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    color: gray;
 }
 
 .hero {
@@ -22,12 +27,17 @@ topnav a {
 
     text-align: center;
 
-    background-image: url(https://github.com/haalbers/zest/blob/Homepage/src/main/resources/static/images/pipizzeria.jpg?raw=true);
+    background-image: url(https://github.com/haalbers/zest/blob/Homepage/src/main/resources/static/images/whiskeyhouse.jpg?raw=true);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
  }
+
+.hero h1 {
+    color: white;
+    font-size: 3em;
+}
 
 .hero .button {
     /* Positioning and sizing */
@@ -41,12 +51,12 @@ topnav a {
     margin-right: auto;
 
     /* Text styles */
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.5em;
     text-align: center;
 
     /* Border styles */
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 20px;
 }
