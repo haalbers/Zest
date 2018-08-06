@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="base :: head"></head>
+
+<body class="container">
+
+<h1 th:text="${title}">Default Title</h1>
+
+<nav th:replace="base :: page-header"></nav>
+
+<p th:unless="${restaurants} and ${restaurants.size()}">No restuarants to display</p>
+
+
+<table class="table">
+
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+
+    <tr th:each="restaurant : ${restaurants}">
+        <td th:text="${restaurant.name}"></td>
+        <td th:text="${restaurant.description}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
