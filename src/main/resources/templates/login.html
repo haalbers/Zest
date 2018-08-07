@@ -8,7 +8,7 @@
 
 <body>
 
-<form method="post" style="max-width:600px;" th:object="${user}">
+<form method="post" style="max-width:600px;" th:object="${loginForm}">
     <div class="form-group">
         <label th:for="username">Username</label>
         <input class="form-control" th:field="*{username}" />
@@ -22,6 +22,8 @@
 
     <input type="submit" value="Login" />
 </form>
+
+<a href = "/register">Not a user? Register now.</a>
 
 </body>
 

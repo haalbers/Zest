@@ -17,7 +17,8 @@
     <a href="/search">Search</a>
     <a href="/list">List</a>
     <a href="/random">Random</a>
-    <a href="/login">Login</a>
+    <a th:if="${user==null}" href="/login">Login</a>
+    <a th:unless="${user==null}" href="/logout">Logout</a>
 </div>
 
 </body>

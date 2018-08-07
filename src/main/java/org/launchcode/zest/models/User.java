@@ -14,11 +14,11 @@ public class User{
     private int id;
 
     @NotNull
-    @Size(min=5, message = "Username must be at least five characters")
+    @Size(min=5, message = "Username must be 5-15 characters")
     private String username;
 
     @NotNull
-    @Size(min=5, message = "Password must be at least five characters")
+    @Size(min=5, message = "Password must be 5-15 characters")
     private String pwHash;
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
