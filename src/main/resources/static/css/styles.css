@@ -62,7 +62,7 @@ body {
     border-radius: 20px;
 }
 
-label {
+.form-group {
     display: inline-block;
     float: left;
     clear: left;
@@ -70,8 +70,8 @@ label {
     margin: 20px;
 }
 
-input {
+/* input {
     display: inline-block;
     float: left;
     margin: 20px;
-}
+} */
